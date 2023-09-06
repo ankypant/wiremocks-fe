@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/test2"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "message": "This is an example of WireMock!",
+      "title": "Hello World!"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

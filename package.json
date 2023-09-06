@@ -1,0 +1,13 @@
+{
+  "name": "wiremock-fe-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mock-server": "cd ./mock-server && java -jar wiremock-standalone-3.0.1.jar --verbose",
+    "docker:compose:mock-server": "docker-compose up --build",
+    "docker:run:mock-server": "docker run -t mock-server ."
+  },
+  "author": "",
+  "license": "ISC"
+}

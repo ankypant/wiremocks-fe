@@ -1,0 +1,43 @@
+{
+  "mappings": [
+    {
+      "scenarioName": "TestScenario",
+      "requiredScenarioState": "Started",
+      "request": {
+        "method": "GET",
+        "url": "/api/test-stateful-scenarios"
+      },
+      "response": {
+        "status": 200,
+        "body": "Successful"
+      }
+    },
+    {
+      "scenarioName": "TestScenario",
+      "requiredScenarioState": "Started",
+      "newScenarioState": "Error",
+      "request": {
+        "method": "POST",
+        "url": "/api/test-stateful-scenarios",
+        "bodyPatterns": [
+          { "contains": "Changed to Error" }
+        ]
+      },
+      "response": {
+        "status": 201
+      }
+    },
+    {
+      "scenarioName": "TestScenario",
+      "requiredScenarioState": "Error",
+      "request": {
+        "method": "GET",
+        "url": "/api/test-stateful-scenarios"
+      },
+      "response": {
+        "status": 400,
+        "body": "Error"
+      }
+    }
+  ]
+}

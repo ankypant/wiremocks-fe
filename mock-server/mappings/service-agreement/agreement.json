@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/service-agreement"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": { "message": "Agreed" },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
